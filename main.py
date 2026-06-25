@@ -14,6 +14,7 @@ PROCESS_FOLDER_MAP = {
     "starrail.exe": r"D:\games\Star Rail\Game\StarRail_Data\ScreenShots",
     "yuanshen.exe": r"D:\games\Genshin Impact\Genshin Impact Game\ScreenShot",
     "zenlesszonezero.exe": r"D:\games\ZenlessZoneZero Game\ScreenShot",
+    "endfield.exe": r"D:\Pictures\ENDFIELD",
     # 在此添加更多映射...
 }
 
@@ -64,7 +65,7 @@ def take_screenshot():
 def main():
     print("截屏监听已启动，按 F9 截图...")
     keyboard.add_hotkey('f9', take_screenshot)
-    keyboard.wait('esc')  # 按ESC退出程序
+    keyboard.wait('f11')  # 按f11退出程序
 
 def is_admin():
     try:
